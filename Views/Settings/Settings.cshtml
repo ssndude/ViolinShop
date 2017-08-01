@@ -1,0 +1,62 @@
+﻿
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script>
+    $(document).ready(function () {
+        $('#characterLeft').text('140 characters left');
+        $('#message').keydown(function () {
+            var max = 140;
+            var len = $(this).val().length;
+            if (len >= max) {
+                $('#characterLeft').text('You have reached the limit');
+                $('#characterLeft').addClass('red');
+                $('#btnSubmit').addClass('disabled');
+            }
+            else {
+                var ch = max - len;
+                $('#characterLeft').text(ch + ' characters left');
+                $('#btnSubmit').removeClass('disabled');
+                $('#characterLeft').removeClass('red');
+            }
+        });
+    });
+
+</script>
+<style>
+    body {
+        padding-top: 40px;
+        background-color: white;
+    }
+</style>
+
+
+<title> Settings</title>
+<h1> Settings</h1>
+<div class='container'>
+    <div class='row'>
+        <div class='col-sm-4 col-sm-offset-1'>
+            <div class='well'>
+                <form>
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <div class='form-group'>
+                                <label for='subject'> section</label>
+                                <select name='subject' class='form-control'>
+                                    <option>Header</option>
+                                    <option> Body</option>
+                                    <option>Calendar</option>
+                                    <option> Footer</option>
+                                </select>
+                                <div class='form-group'>
+                                    <label for='BKCol'>Background Color</label>
+                                    <input type='color' name='BKCol' class='form-control' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

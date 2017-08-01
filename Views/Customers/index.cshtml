@@ -1,0 +1,89 @@
+﻿@model ViolinShop.Models.CustomerModel
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Customers", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>
+                    Customer:
+                </td>
+                <td>
+                    @Html.DropDownList("ddlCustomer", Model.Customers, "Please Select Customer")
+                    @Html.HiddenFor(m => m.SelectedCustomer);
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    }
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-4 col-sm-offset-1'>
+                <div class='well'>
+                    <form name="Customer">
+                        <button name="Clear" onclick="clearImmediate" ; />
+
+                        <div class='col-sm-10'>
+                            <div class='form-group'>
+                                <label for='ID'>ID</label><input type='text' name='ID' class='form-control' value="@Model.ID" />
+                            </div>
+                            <div class='form-group'>
+                                <label for='fname'>First Name</label><input type='text' name='fname' class='form-control' value="@Model.FirstName" />
+                            </div>
+                            <div class='form-group'>
+                                <label for='lname'>Last Name</label><input type='text' name='lname' class='form-control' value="@Model.LastName" />
+                            </div>
+                            <div class='form-group'>
+                                <label for='mname'>Middle Name or initial</label><input type='text' name='mname' class='form-control' value="@Model.MiddleName" />
+                            </div>
+                            <div class='form-group'>
+                                <label for='email'>Email</label><input type='text' name='email' class='form-control' value="@Model.EmailAddress" />
+                            </div>
+                            <div class='form-group'>
+                                <div class='col-sm-6'>
+                                    <label for='Stud'>Student</label><input type='CheckBox' enable="true" value=@Model.Stud.ToString() name='stuchk' class='form-control' Checked=@Model.Stud />
+                                </div>
+                            </div>
+                            <div class='form-group'>
+                                <div class='col-sm-6'>
+                                    <label for='Cust'>Customer</label><input type='CheckBox' enable="true" value=@Model.Cust.ToString() Name='customchk' class='form-control' Checked=@Model.Cust />
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    @*<div>@Html.Partial("~/Views/Customers/PartcialCustomers.cshtml", Model.Customers)</div>*@
+</body>

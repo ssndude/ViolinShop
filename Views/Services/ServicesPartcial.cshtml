@@ -1,0 +1,14 @@
+﻿@model ViolinShop.Models.StudentModel
+       {
+            <table>
+                <tr>
+                    <td>
+                        Students:
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(c => c.ID, Model.Customers, "Please select")
+                    </td>
+
+                </tr>
+            </table>
+        }

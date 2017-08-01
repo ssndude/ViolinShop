@@ -1,0 +1,61 @@
+﻿@model ViolinShop.Models.CustomerModel
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customers</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("#SelectedCustomer").on("change", function {
+                $("#SelectedCustomerText").val($(this).text());
+                $("#SelectedCustomerValue").val($(this).val());
+
+            });
+        });
+    </script>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Customers", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>
+                    Customer:
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.ID, Model.Customers, "Please select")
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.SelectedCustomer)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    }
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+    <div>Html.RenderPartial("~/Views/Customers/PartcialCustomers.cshtml", new ViewDataDictionary{}</div>
+
+</body>

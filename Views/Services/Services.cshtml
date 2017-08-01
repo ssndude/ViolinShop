@@ -1,0 +1,87 @@
+﻿@model ViolinShop.Models.Services
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+
+    @using (Html.BeginForm("Services", "Services", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>
+                    Instructor/Student:
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.SelectedInstructor, 
+                        new SelectList(Model.Instructors, "Value", "Text"),"Select an Instructor")               </td>
+                <td>
+                  @Html.DropDownListFor(m => m.SelectedStudent,
+                        new SelectList(Model.Students, "Value", "Text"), "Select a Student")   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Times:
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.SelectedFrom,
+                                        new SelectList(Model.FromAppointment, "Value", "Text"), "Select a Start Time")
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.SelectedTo,
+                                        new SelectList(Model.ToAppointment, "Value", "Text"), "Select an End TIme")
+                </td>
+            </tr>
+        </table>
+        @if (ViewBag.Message != null)
+        {
+            <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+            </script>
+        }
+    }
+    <Section id="appointments">
+                    <h1>Appointments</h1>
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-sm-4 col-sm-offset-1'>
+                                <div class='well'>
+                                    <form>
+                                        <div class='row'>
+                                            <div class='col-sm-4'>
+                                                <div class='form-group' style="float:left">
+                                                    @*<label for='teach'> section</label>
+                                                    <select name='Teacher' class='form-control'>
+                                                        <option>Headey</option>
+                                                        <option> Brody</option>
+                                                        <option>Carol</option>
+                                                        <option>Frooter</option>
+                                                    </select>*@
+                                                </div>
+                                                <div class="form-group" style="float:left">
+                                                    <input type="radio" name="instrument" value="Violin">Violin<br>
+                                                    <input type="radio" name="instrument" value="Viola">Viola<br>
+                                                    <input type="radio" name="instrument" value="Base Viola">Base Viola<br>
+                                                    <input type="radio" name="instrument" value="Guitar">Guitar<br>
+                                                    <iframe src="https://calendar.google.com/calendar/embed?src=vjfkup1291t0amg3ji94krtkao%40group.calendar.google.com&ctz=America/New_York"
+                                                            style="border: 0" width="500" height="416" frameborder="0" scrolling="no"  onclick="postDate()"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </Section>
+</body>

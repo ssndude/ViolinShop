@@ -1,0 +1,154 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!--">-->
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Code\General.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\updateablestyles.css" />
+    <Content Include="wwwroot\Images\103291-3d-glossy-green-orb-icon-business-cart3.png" />
+    <Content Include="wwwroot\Images\Amazing Grace.jpg" />
+    <Content Include="wwwroot\Images\banner1.svg" />
+    <Content Include="wwwroot\Images\banner2.svg" />
+    <Content Include="wwwroot\Images\banner3.svg" />
+    <Content Include="wwwroot\Images\banner4.svg" />
+    <Content Include="wwwroot\Images\bought.jpg" />
+    <Content Include="wwwroot\Images\buy.jpg" />
+    <Content Include="wwwroot\Images\cello-freeman-44-alta-calidad-violonchelo-chelo-chello-nuev-D_NQ_NP_841305-MCO25012301003_082016-F.jpg" />
+    <Content Include="wwwroot\Images\Cello_front_side.png" />
+    <Content Include="wwwroot\Images\chello-orchestra-instrument-music-img.jpg" />
+    <Content Include="wwwroot\Images\chello.jpg" />
+    <Content Include="wwwroot\Images\chello32.jpg" />
+    <Content Include="wwwroot\Images\cog-settings-512.png" />
+    <Content Include="wwwroot\Images\cogicon.jpg" />
+    <Content Include="wwwroot\Images\FB.jpg" />
+    <Content Include="wwwroot\Images\gis-sb-1.jpg" />
+    <Content Include="wwwroot\Images\gplus.png" />
+    <Content Include="wwwroot\Images\Happy Birthday.jpg" />
+    <Content Include="wwwroot\Images\images11.jpg" />
+    <Content Include="wwwroot\Images\images20.jpg" />
+    <Content Include="wwwroot\Images\images22.jpg" />
+    <Content Include="wwwroot\Images\images3.jpg" />
+    <Content Include="wwwroot\Images\images4.jpg" />
+    <Content Include="wwwroot\Images\images43.jpg" />
+    <Content Include="wwwroot\Images\images44.jpg" />
+    <Content Include="wwwroot\Images\images8.jpg" />
+    <Content Include="wwwroot\Images\index.41jpg.jpg" />
+    <Content Include="wwwroot\Images\index1.jpg" />
+    <Content Include="wwwroot\Images\index2.jpg" />
+    <Content Include="wwwroot\Images\index3.jpg" />
+    <Content Include="wwwroot\Images\index30.jpg" />
+    <Content Include="wwwroot\Images\index4.jpg" />
+    <Content Include="wwwroot\Images\index5.jpg" />
+    <Content Include="wwwroot\Images\index6.jpg" />
+    <Content Include="wwwroot\Images\index7.jpg" />
+    <Content Include="wwwroot\Images\index8.jpg" />
+    <Content Include="wwwroot\Images\J28005000001000-00-500x500.jpg" />
+    <Content Include="wwwroot\Images\month.png" />
+    <Content Include="wwwroot\Images\musicbkgrnd.jpg" />
+    <Content Include="wwwroot\Images\ode_to_joy_violin.jpg" />
+    <Content Include="wwwroot\Images\s-l1000.jpg" />
+    <Content Include="wwwroot\Images\Scales in F Major.jpg" />
+    <Content Include="wwwroot\Images\Scales in G-Major.jpg" />
+    <Content Include="wwwroot\Images\settings.png" />
+    <Content Include="wwwroot\Images\smalv.jpg" />
+    <Content Include="wwwroot\Images\Steel-string-guitar.jpg" />
+    <Content Include="wwwroot\Images\TaylorGuitars-800-DLX-Browse.jpg" />
+    <Content Include="wwwroot\Images\Thumbs.db" />
+    <Content Include="wwwroot\Images\Tumbler.jpg" />
+    <Content Include="wwwroot\Images\TwinkleTwinkle-Numbered.png" />
+    <Content Include="wwwroot\Images\twitter.jpg" />
+    <Content Include="wwwroot\Images\Violin Finger Board.jpg" />
+    <Content Include="wwwroot\Images\violin-outfits.jpg" />
+    <Content Include="wwwroot\Images\Violin.jpg" />
+    <Content Include="wwwroot\Images\violins.jpg" />
+    <Content Include="wwwroot\Images\violin_neck_music_staff_notes_web.png" />
+    <Content Include="wwwroot\Images\youtube.png" />
+    <Content Include="wwwroot\Images\_vti_cnf\3cd36a09cd8febf54f833c1d3be597fb.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\4c5e06bb2e824e5c38f204301a098b20.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\76cfd53d686f4159842d840fae3b7e45.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\9327461e9d46919eb5ca98ac2b2c0b9a.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\b04c03be8162cf244a6c79410ecc1b53.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\e5ced5a3d01eefa2ab0e689681d319cc.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\FB.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\gplus.png" />
+    <Content Include="wwwroot\Images\_vti_cnf\month.png" />
+    <Content Include="wwwroot\Images\_vti_cnf\musicbkgrnd.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\ode_to_joy_violin.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\smalv.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\Thumbs.db" />
+    <Content Include="wwwroot\Images\_vti_cnf\Tumbler.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\TwinkleTwinkle-Numbered.png" />
+    <Content Include="wwwroot\Images\_vti_cnf\twitter.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\Violin.jpg" />
+    <Content Include="wwwroot\Images\_vti_cnf\violin_neck_music_staff_notes_web.png" />
+    <Content Include="wwwroot\Images\_vti_cnf\youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Https" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Core" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="1.1.1" />
+    <PackageReference Include="Modernizr" Version="2.8.3" />
+    <PackageReference Include="Modernizr.full" Version="2.6.2.1" />
+    <PackageReference Include="Modernizr.New" Version="3.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Respond" Version="1.4.2" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.0-preview1-25305-02" />
+    <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.0" />
+    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.1" />
+    <PackageReference Include="ZKWeb.System.Drawing" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Code\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Partial\Services\" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <Reference Include="System.Drawing">
+      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.0-preview1-002111-00\System.Drawing</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>-->
+
+</Project>

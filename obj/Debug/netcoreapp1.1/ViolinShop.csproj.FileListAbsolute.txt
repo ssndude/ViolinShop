@@ -1,0 +1,9 @@
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\bin\Debug\netcoreapp1.1\ViolinShop.deps.json
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\bin\Debug\netcoreapp1.1\ViolinShop.runtimeconfig.json
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\bin\Debug\netcoreapp1.1\ViolinShop.runtimeconfig.dev.json
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\bin\Debug\netcoreapp1.1\ViolinShop.dll
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\bin\Debug\netcoreapp1.1\ViolinShop.pdb
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\obj\Debug\netcoreapp1.1\ViolinShop.AssemblyInfo.cs
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\obj\Debug\netcoreapp1.1\ViolinShop.dll
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\obj\Debug\netcoreapp1.1\ViolinShop.pdb
+C:\Users\ssndude\Documents\Visual Studio 2017\Projects\ViolinShop\ViolinShop\obj\Debug\netcoreapp1.1\ViolinShop.csprojResolveAssemblyReference.cache

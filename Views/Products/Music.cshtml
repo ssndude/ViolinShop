@@ -1,0 +1,73 @@
+﻿@model ICollection<ViolinShop.Models.Products>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-6">
+                <h2>My Shopping List</h2><br />
+                <div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    Filters:
+                    <form name="radios" action="~/Products/Products" typeof="get">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Instruments</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Music</label>
+                        </div>
+                        <div class="radio disabled">
+                            <label><input type="radio" name="optradio" Checked>Both</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td width="40" height="40">Image</td>
+                                <td height="40">Name</td>
+                                <td height="40" width="40">Price</td>
+                                <td height="40" width="40">Subtotal</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            @foreach (var product in Model)
+                            {
+                                <tr>
+                                    <td style="background-color:White;">
+                                        <input type="image" src="~/Images/@product.Image" height="40" width="40" alt="Image on the way" />
+                                    </td>
+                                    <td style="background-color:White;">
+                                        <input type="text" value="@product.Description" />
+                                        <input type="hidden" name="Product.Id" value="@product.Id" />
+                                    </td>
+
+                                    <td>
+                                        <input type="text" width="40" value="@product.Price" />
+                                    </td>
+
+                                    <td><input type="Text" width="40" name="Subtotal" value="0" /></td>
+                                    <td><button class="btn btn-primary">add</button></td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+
+                    <div class="pull-Left">
+                        <a href="#" class="btn btn-info">Continue Shopping</a>
+                        <a href="#" class="btn btn-success">Checkout</a><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
